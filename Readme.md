@@ -17,13 +17,13 @@ Aplicação para ONGs com intuito em ajudar com custos de incidentes gerados dur
 
 # Utilizando as rotas
 
-GET - Listar todas as ONGs: http://localhost:3333/ongs
-POST - Cadastrar nova ONG: http://localhost:3333/ongs
+- GET - Listar todas as ONGs: http://localhost:3333/ongs
+- POST - Cadastrar nova ONG: http://localhost:3333/ongs
 
-GET - Listar todas os incidentes de uma ONGs: http://localhost:3333/incidents (retorna header com quantidade de incidentes)
-POST - Cadastrar um novo incidente para da ONG: http://localhost:3333/incidents ( solicita header de autorização)
-DELETE - Deleta um incidente da ONG: http://localhost:3333/incidents/:id ( solicita header de autorização)
+- GET - Listar todas os incidentes de uma ONGs: http://localhost:3333/incidents (retorna header com quantidade de incidentes)
+- POST - Cadastrar um novo incidente para da ONG: http://localhost:3333/incidents ( solicita header de autorização)
+- DELETE - Deleta um incidente da ONG: http://localhost:3333/incidents/:id ( solicita header de autorização)
 
-GET - Listar todas os incidentes de uma ONGs: http://localhost:3333/profile ( solicita header de autorização)
+- GET - Listar todas os incidentes de uma ONGs: http://localhost:3333/profile ( solicita header de autorização)
 
-POST - Realiza o Login da ONG por id: http://localhost:3333/sessions
+- POST - Realiza o Login da ONG por id: http://localhost:3333/sessions
