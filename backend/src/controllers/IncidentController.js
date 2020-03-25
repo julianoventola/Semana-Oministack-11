@@ -3,7 +3,26 @@ const connection = require('../database/connection');
 module.exports = {
   // List all Incidents
   async index(req, res) {
-    const incidents = await connection('incidents').select('*');
+    const { page = 1 } = req.query;
+    // Count how many incidents are saved in Db
+    const [countIncidents] = await connection('incidents').count();
+
+    // Get incidents by page and join with ong table
+    const incidents = await connection('incidents')
+      .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
+      .limit(5)
+      .offset((page - 1) * 5)
+      .select([
+        'incidents.*',
+        'ongs.name',
+        'ongs.email',
+        'ongs.whatsapp',
+        'ongs.city',
+        'ongs.uf',
+      ]);
+
+    // Set in header for the total of incidents saved in Db
+    res.header('X-Total-Count', countIncidents['count(*)']);
 
     return res.json(incidents);
   },
