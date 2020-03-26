@@ -1,9 +1,12 @@
 import React from 'react';
+import './global.css';
+
+import Logon from './pages/Logon';
 
 function App() {
   return (
     <div>
-      <h1>Ola</h1>
+      <Logon />
     </div>
   );
 }
