@@ -31,11 +31,28 @@ Aplicação para ONGs com intuito em ajudar com custos de incidentes gerados dur
 
 - POST - Realiza o Login da ONG por id: http://localhost:3333/sessions
 
-# Como iniciar frontend:
+# Como iniciar Frontend:
 
 - Rode o comando: yarn OU npm install
 - Rode o comando: yarn start OU npm start
 
 # Frontend Dependencies
 
-- On loading...
+- react-icons - Utilização de icones nas páginas
+- react-router-dom - Para roteamento de rotas(paginas) no front
+- axios - Para conexão com o backend
+
+# Como iniciar Mobile:
+
+- Rode o comando: yarn OU npm install
+- Rode o comando: yarn start OU npm start
+  - Utilize o APP do expo instalado no seu celular para rodar o aplicativo!
+
+# Mobile Dependencies
+
+- @react-navigation/native - Navegação entre as rotas/telas do aplicativo
+- @react-navigation/stack - Gerenciamento das rotas acessadas
+- axios - Conexão com o backend
+- expo-mail-composer - Utilizado para interagir com o "app" de email de cada celular e envio
+- expo-constants - Gerenciamento do tamanho da tela para estilização
+- intl - padronização de campos como por exemplo, edição monetária de valores BRL
