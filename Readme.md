@@ -14,6 +14,9 @@ Aplicação para ONGs com intuito em ajudar com custos de incidentes gerados dur
 - nodemon - Auto restart do server (dev dependency)
 - knex - Conexão com o banco de dado mongoDB SQLite
 - sqlite3 - Utilização do banco SQLite
+- celebrate - Validação de dados
+- jest - teste automatizados (dev dependency)
+- supertest - padronização para testes automatizados (dev dependency)
 
 # Utilizando as rotas
 
